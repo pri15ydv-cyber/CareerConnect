@@ -1,0 +1,103 @@
+nav {
+    background-color: #1e3a8a;
+    padding: 15px;
+}
+
+nav h2 {
+    color: white;
+    display: inline;
+    margin-right: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+section {
+    text-align: center;
+    padding: 80px 20px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.card {
+    background-color: #f3f4f6;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #1e3a8a;
+    color: white;
+}
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f3f4f6;
+    margin-top: 10px;
+}
+form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    text-align: center;
+}
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+form button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form button {
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+.job-card {
+    background-color: #f3f4f6;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.job-card h2 {
+    color: #1e3a8a;
+}
+
+.job-card p {
+    margin: 8px 0;
+}
+.job-card button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}

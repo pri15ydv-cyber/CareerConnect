@@ -41,6 +41,23 @@ applyButtons.forEach(function(button) {
 
 });
 const detailsButtons = document.querySelectorAll(".view-details-btn");
+const jobFilter = document.getElementById("jobFilter");
+
+jobFilter.addEventListener("change", function() {
+
+    const selectedType = jobFilter.value;
+
+    jobCards.forEach(function(card) {
+
+        if (selectedType === "all" || card.dataset.type === selectedType) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
 
 detailsButtons.forEach(function(button) {
 

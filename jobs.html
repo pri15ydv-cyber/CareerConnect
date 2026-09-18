@@ -14,12 +14,17 @@
 </nav>
     <h1>Jobs & Internships</h1>
     <div class="search-box">
+        <select id="jobFilter">
+    <option value="all">All</option>
+    <option value="job">Job</option>
+    <option value="internship">Internship</option>
+</select>
     <input type="text" id="jobSearch" placeholder="Search jobs or internships">
 </div>
 
     <div class="job-card-container">
 
-        <div class="job-card">
+        <div class="job-card" data-type="internship"></div>
             <h2>Software Developer Intern</h2>
             <p><strong>Company:</strong> ABC Technologies</p>
             <p><strong>Location:</strong> Noida</p>
@@ -29,7 +34,7 @@
             <button class="save-job-btn">❤️ Save Job</button>
         </div>
 
-        <div class="job-card"> 
+        <div class="job-card" data-type="internship"></div>
            <h2>Web Development Intern</h2>
             <p><strong>Company:</strong> XYZ Solutions</p>
             <p><strong>Location:</strong> Delhi</p>

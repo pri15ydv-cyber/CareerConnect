@@ -29,3 +29,25 @@ saveButtons.forEach(function(button) {
     });
 
 });
+const applyButtons = document.querySelectorAll(".apply-job-btn");
+
+applyButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        alert("Application process started!");
+
+    });
+
+});
+const detailsButtons = document.querySelectorAll(".view-details-btn");
+
+detailsButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        alert("Job details will be shown here.");
+
+    });
+
+});

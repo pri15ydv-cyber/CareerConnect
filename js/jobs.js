@@ -63,7 +63,7 @@ detailsButtons.forEach(function(button) {
 
     button.addEventListener("click", function() {
 
-        alert("Job details will be shown here.");
+        window.location.href = "job-details.html";
 
     });
 

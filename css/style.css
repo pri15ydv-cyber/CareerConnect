@@ -113,3 +113,39 @@ form button {
     border-radius: 6px;
     font-size: 16px;
 }
+section ul {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+/* Application Form */
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+}

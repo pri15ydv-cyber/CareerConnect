@@ -35,7 +35,7 @@ applyButtons.forEach(function(button) {
 
     button.addEventListener("click", function() {
 
-        alert("Application process started!");
+        window.location.href = "apply.html";
 
     });
 

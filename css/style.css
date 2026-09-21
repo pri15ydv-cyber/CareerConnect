@@ -149,3 +149,18 @@ form textarea {
 form button {
     margin-top: 20px;
 }
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.applied {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.under-review {
+    background-color: #fff3cd;
+    color: #856404;
+}

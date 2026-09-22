@@ -149,6 +149,9 @@ form textarea {
 form button {
     margin-top: 20px;
 }
+.card button {
+    margin: 8px;
+}
 .status {
     padding: 5px 10px;
     border-radius: 5px;

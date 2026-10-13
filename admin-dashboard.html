@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CareerConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>CareerConnect Admin</h2>
+        <a href="dashboard.html">Student Dashboard</a>
+        <a href="jobs.html">View Jobs</a>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <section>
+        <h1>Admin Dashboard</h1>
+        <p>Manage jobs, internships and student applications.</p>
+    </section>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Total Jobs</h2>
+            <p>2</p>
+            <button onclick="window.location.href='admin-jobs.html'">
+               Manage Jobs
+        </button>
+        </div>
+
+        <div class="card">
+            <h2>Total Applications</h2>
+            <p>2</p>
+            <button onclick="window.location.href='admin-applications.html'">
+                View Applications
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Manage Students</h2>
+            <p>View student application records.</p>
+            <button onclick="window.location.href='applications.html'">
+                View Students' Applications
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Post a New Job</h2>
+            <p>Add a new job or internship opportunity.</p>
+            <button onclick="window.location.href='admin-jobs.html'">
+                Add Job
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

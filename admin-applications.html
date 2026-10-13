@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Applications - CareerConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>CareerConnect Admin</h2>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a href="admin-jobs.html">Add Job</a>
+        <a href="dashboard.html">Student Dashboard</a>
+    </nav>
+
+    <section>
+        <h1>Manage Student Applications</h1>
+        <p>Review applications and update their status.</p>
+
+        <div class="card">
+            <h3>Software Developer Intern</h3>
+            <p><strong>Student:</strong> Aarohi Sharma </p>
+            <p><strong>Email:</strong> aarohi@example.com</p>
+            <p><strong>Company:</strong> ABC Technologies</p>
+
+            <label for="status1">Application Status:</label>
+            <select id="status1">
+                <option value="Applied">Applied</option>
+                <option value="Under Review">Under Review</option>
+                <option value="Shortlisted">Shortlisted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+
+            <button type="button" onclick="updateStatus('status1')">
+                Update Status
+            </button>
+            <p id="message1" aria-live="polite"></p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development Intern</h3>
+            <p><strong>Student:</strong> Raj Roy</p>
+            <p><strong>Email:</strong> raj@example.com</p>
+            <p><strong>Company:</strong> XYZ Solutions</p>
+
+            <label for="status2">Application Status:</label>
+            <select id="status2">
+                <option value="Applied">Applied</option>
+                <option value="Under Review">Under Review</option>
+                <option value="Shortlisted">Shortlisted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+
+            <button type="button" onclick="updateStatus('status2')">
+                Update Status
+            </button>
+            <p id="message2" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <script src="js/admin-applications.js"></script>
+</body>
+</html>

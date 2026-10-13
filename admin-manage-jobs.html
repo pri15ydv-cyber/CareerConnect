@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Jobs - CareerConnect Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>CareerConnect Admin</h2>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+        <a href="admin-jobs.html">Add Job</a>
+        <a href="admin-applications.html">Manage Applications</a>
+        <a href="dashboard.html">Student Dashboard</a>
+    </nav>
+
+    <section>
+        <h1>Manage Jobs & Internships</h1>
+        <p>View and manage the available opportunities.</p>
+
+        <button onclick="window.location.href='admin-jobs.html'">
+            + Add New Job
+        </button>
+
+        <div class="card" id="job1">
+            <h3>Software Developer Intern</h3>
+            <p><strong>Company:</strong> ABC Technologies</p>
+            <p><strong>Location:</strong> Noida</p>
+            <p><strong>Type:</strong> Internship</p>
+            <p><strong>Stipend:</strong> ₹15,000/month</p>
+
+            <button type="button" onclick="editJob('job1')">
+                Edit
+            </button>
+
+            <button type="button" onclick="deleteJob('job1')">
+                Delete
+            </button>
+        </div>
+
+        <div class="card" id="job2">
+            <h3>Web Development Intern</h3>
+            <p><strong>Company:</strong> XYZ Solutions</p>
+            <p><strong>Location:</strong> Delhi</p>
+            <p><strong>Type:</strong> Internship</p>
+            <p><strong>Stipend:</strong> To be announced</p>
+
+            <button type="button" onclick="editJob('job2')">
+                Edit
+            </button>
+
+            <button type="button" onclick="deleteJob('job2')">
+                Delete
+            </button>
+        </div>
+    </section>
+
+    <script src="js/admin-manage-jobs.js"></script>
+</body>
+</html>

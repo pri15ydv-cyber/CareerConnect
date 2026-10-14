@@ -18,45 +18,44 @@
 
     <section>
         <h1>Manage Jobs & Internships</h1>
+<div class="card" id="editJobForm" style="display: none;">
+    <h2>Edit Job Details</h2>
+
+    <label for="editTitle">Job Title</label><br>
+    <input type="text" id="editTitle" required>
+    <br><br>
+
+    <label for="editCompany">Company Name</label><br>
+    <input type="text" id="editCompany" required>
+    <br><br>
+
+    <label for="editLocation">Location</label><br>
+    <input type="text" id="editLocation" required>
+    <br><br>
+
+    <label for="editType">Job Type</label><br>
+    <select id="editType">
+        <option value="Internship">Internship</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+    </select>
+    <br><br>
+
+    <label for="editStipend">Salary / Stipend</label><br>
+    <input type="text" id="editStipend" required>
+    <br><br>
+
+    <button type="button" onclick="saveJobChanges()">Save Changes</button>
+    <button type="button" onclick="cancelEdit()">Cancel</button>
+</div>
         <p>View and manage the available opportunities.</p>
 
         <button onclick="window.location.href='admin-jobs.html'">
             + Add New Job
         </button>
 
-        <div class="card" id="job1">
-            <h3>Software Developer Intern</h3>
-            <p><strong>Company:</strong> ABC Technologies</p>
-            <p><strong>Location:</strong> Noida</p>
-            <p><strong>Type:</strong> Internship</p>
-            <p><strong>Stipend:</strong> ₹15,000/month</p>
-
-            <button type="button" onclick="editJob('job1')">
-                Edit
-            </button>
-
-            <button type="button" onclick="deleteJob('job1')">
-                Delete
-            </button>
-        </div>
-
-        <div class="card" id="job2">
-            <h3>Web Development Intern</h3>
-            <p><strong>Company:</strong> XYZ Solutions</p>
-            <p><strong>Location:</strong> Delhi</p>
-            <p><strong>Type:</strong> Internship</p>
-            <p><strong>Stipend:</strong> To be announced</p>
-
-            <button type="button" onclick="editJob('job2')">
-                Edit
-            </button>
-
-            <button type="button" onclick="deleteJob('job2')">
-                Delete
-            </button>
-        </div>
-    </section>
-
+       </section>
+    <script src="js/jobs-storage.js"></script>
     <script src="js/admin-manage-jobs.js"></script>
 </body>
 </html>
